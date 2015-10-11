@@ -1,0 +1,799 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='../libs/nv.d3.min.css'>
+    
+    <script src='../libs/jquery.min.js' type='text/javascript'></script>
+    <script src='../libs/d3.v3.min.js' type='text/javascript'></script>
+    <script src='../libs/nv.d3.min.js' type='text/javascript'></script>
+    <script src='../libs/fisheye.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chartd7c5c1b2389' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchartd7c5c1b2389()
+    });
+    function drawchartd7c5c1b2389(){  
+      var opts = {
+ "dom": "chartd7c5c1b2389",
+"width":    800,
+"height":    400,
+"x": "Dataset",
+"y": "Regras",
+"group": "Experimento",
+"type": "multiBarChart",
+"id": "chartd7c5c1b2389" 
+},
+        data = [
+ {
+ "Dataset": "australian",
+"Experimento": "Min",
+"Regras": 3.058707072715 
+},
+{
+ "Dataset": "balance",
+"Experimento": "Min",
+"Regras": 3.535145354172 
+},
+{
+ "Dataset": "banana",
+"Experimento": "Min",
+"Regras": 2.525728644308 
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Min",
+"Regras": 2.708050201102 
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "Min",
+"Regras": 4.206184043978 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Min",
+"Regras":  2.79728133483 
+},
+{
+ "Dataset": "crx",
+"Experimento": "Min",
+"Regras": 3.020424886144 
+},
+{
+ "Dataset": "dermatology",
+"Experimento": "Min",
+"Regras": 5.586499314041 
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "Min",
+"Regras": 4.335982696172 
+},
+{
+ "Dataset": "german",
+"Experimento": "Min",
+"Regras": 3.391147045809 
+},
+{
+ "Dataset": "haberman",
+"Experimento": "Min",
+"Regras": 2.341805806147 
+},
+{
+ "Dataset": "hayes",
+"Experimento": "Min",
+"Regras": 3.526360524616 
+},
+{
+ "Dataset": "heart",
+"Experimento": "Min",
+"Regras": 3.005682604407 
+},
+{
+ "Dataset": "ionosphere",
+"Experimento": "Min",
+"Regras":  2.79728133483 
+},
+{
+ "Dataset": "iris",
+"Experimento": "Min",
+"Regras": 1.945910149055 
+},
+{
+ "Dataset": "magic",
+"Experimento": "Min",
+"Regras": 2.174751721484 
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "Min",
+"Regras": 2.906901059847 
+},
+{
+ "Dataset": "page",
+"Experimento": "Min",
+"Regras": 3.817712325957 
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Min",
+"Regras": 2.525728644308 
+},
+{
+ "Dataset": "pima",
+"Experimento": "Min",
+"Regras":  2.73436750942 
+},
+{
+ "Dataset": "ring",
+"Experimento": "Min",
+"Regras": 3.058707072715 
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Min",
+"Regras": 2.580216829592 
+},
+{
+ "Dataset": "satimage",
+"Experimento": "Min",
+"Regras": 4.075841090658 
+},
+{
+ "Dataset": "segment",
+"Experimento": "Min",
+"Regras":  3.12676053596 
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Min",
+"Regras": 2.557227311368 
+},
+{
+ "Dataset": "spectfheart",
+"Experimento": "Min",
+"Regras": 2.557227311368 
+},
+{
+ "Dataset": "tae",
+"Experimento": "Min",
+"Regras": 3.054001181678 
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "Min",
+"Regras": 3.430756183904 
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Min",
+"Regras": 2.624668592163 
+},
+{
+ "Dataset": "twonorm",
+"Experimento": "Min",
+"Regras": 2.917770732084 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Min",
+"Regras": 2.424802725718 
+},
+{
+ "Dataset": "wine",
+"Experimento": "Min",
+"Regras": 2.610069792742 
+},
+{
+ "Dataset": "winequality",
+"Experimento": "Min",
+"Regras": 3.339321977944 
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Min",
+"Regras": 2.850706501504 
+},
+{
+ "Dataset": "optdigits",
+"Experimento": "Min",
+"Regras":              0 
+},
+{
+ "Dataset": "australian",
+"Experimento": "Min e Negacao",
+"Regras": 3.081909969795 
+},
+{
+ "Dataset": "balance",
+"Experimento": "Min e Negacao",
+"Regras": 4.642465970732 
+},
+{
+ "Dataset": "banana",
+"Experimento": "Min e Negacao",
+"Regras": 2.721295427852 
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Min e Negacao",
+"Regras": 2.912350664615 
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "Min e Negacao",
+"Regras": 3.953164948759 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Min e Negacao",
+"Regras": 3.446807892914 
+},
+{
+ "Dataset": "crx",
+"Experimento": "Min e Negacao",
+"Regras": 2.933856869836 
+},
+{
+ "Dataset": "dermatology",
+"Experimento": "Min e Negacao",
+"Regras": 5.478135793124 
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "Min e Negacao",
+"Regras": 4.525044141509 
+},
+{
+ "Dataset": "german",
+"Experimento": "Min e Negacao",
+"Regras": 3.706228092449 
+},
+{
+ "Dataset": "haberman",
+"Experimento": "Min e Negacao",
+"Regras":  3.12676053596 
+},
+{
+ "Dataset": "hayes",
+"Experimento": "Min e Negacao",
+"Regras": 3.526360524616 
+},
+{
+ "Dataset": "heart",
+"Experimento": "Min e Negacao",
+"Regras": 3.086486636822 
+},
+{
+ "Dataset": "ionosphere",
+"Experimento": "Min e Negacao",
+"Regras": 2.827313621929 
+},
+{
+ "Dataset": "iris",
+"Experimento": "Min e Negacao",
+"Regras": 1.945910149055 
+},
+{
+ "Dataset": "magic",
+"Experimento": "Min e Negacao",
+"Regras": 2.687847493785 
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "Min e Negacao",
+"Regras": 2.442347035369 
+},
+{
+ "Dataset": "page",
+"Experimento": "Min e Negacao",
+"Regras": 3.742420221042 
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Min e Negacao",
+"Regras": 2.821378886409 
+},
+{
+ "Dataset": "pima",
+"Experimento": "Min e Negacao",
+"Regras": 3.010620886048 
+},
+{
+ "Dataset": "ring",
+"Experimento": "Min e Negacao",
+"Regras": 3.095577608524 
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Min e Negacao",
+"Regras": 3.034952986707 
+},
+{
+ "Dataset": "satimage",
+"Experimento": "Min e Negacao",
+"Regras": 4.070734696583 
+},
+{
+ "Dataset": "segment",
+"Experimento": "Min e Negacao",
+"Regras": 3.608211551046 
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Min e Negacao",
+"Regras": 2.980618635744 
+},
+{
+ "Dataset": "spectfheart",
+"Experimento": "Min e Negacao",
+"Regras": 2.708050201102 
+},
+{
+ "Dataset": "tae",
+"Experimento": "Min e Negacao",
+"Regras":  3.67882911826 
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "Min e Negacao",
+"Regras": 3.417726683613 
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Min e Negacao",
+"Regras": 3.277144732992 
+},
+{
+ "Dataset": "twonorm",
+"Experimento": "Min e Negacao",
+"Regras": 3.514526066969 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Min e Negacao",
+"Regras": 2.424802725718 
+},
+{
+ "Dataset": "wine",
+"Experimento": "Min e Negacao",
+"Regras": 2.906901059847 
+},
+{
+ "Dataset": "winequality",
+"Experimento": "Min e Negacao",
+"Regras": 4.133565275375 
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Min e Negacao",
+"Regras":  3.12676053596 
+},
+{
+ "Dataset": "optdigits",
+"Experimento": "Min e Negacao",
+"Regras":   4.7510006342 
+},
+{
+ "Dataset": "australian",
+"Experimento": "Prod",
+"Regras":  3.01553490085 
+},
+{
+ "Dataset": "balance",
+"Experimento": "Prod",
+"Regras": 3.535145354172 
+},
+{
+ "Dataset": "banana",
+"Experimento": "Prod",
+"Regras": 1.791759469228 
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Prod",
+"Regras": 2.230014400159 
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "Prod",
+"Regras": 4.131961425793 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Prod",
+"Regras":  2.79728133483 
+},
+{
+ "Dataset": "crx",
+"Experimento": "Prod",
+"Regras": 2.906901059847 
+},
+{
+ "Dataset": "dermatology",
+"Experimento": "Prod",
+"Regras":  5.58687405641 
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "Prod",
+"Regras": 4.298645025735 
+},
+{
+ "Dataset": "german",
+"Experimento": "Prod",
+"Regras": 3.407841924381 
+},
+{
+ "Dataset": "haberman",
+"Experimento": "Prod",
+"Regras": 2.174751721484 
+},
+{
+ "Dataset": "hayes",
+"Experimento": "Prod",
+"Regras": 3.526360524616 
+},
+{
+ "Dataset": "heart",
+"Experimento": "Prod",
+"Regras": 2.960105095911 
+},
+{
+ "Dataset": "ionosphere",
+"Experimento": "Prod",
+"Regras":  2.87356463958 
+},
+{
+ "Dataset": "iris",
+"Experimento": "Prod",
+"Regras": 1.945910149055 
+},
+{
+ "Dataset": "magic",
+"Experimento": "Prod",
+"Regras": 1.902107526397 
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "Prod",
+"Regras": 2.509599262378 
+},
+{
+ "Dataset": "page",
+"Experimento": "Prod",
+"Regras":  3.56671182014 
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Prod",
+"Regras": 2.370243741468 
+},
+{
+ "Dataset": "pima",
+"Experimento": "Prod",
+"Regras": 2.476538400117 
+},
+{
+ "Dataset": "ring",
+"Experimento": "Prod",
+"Regras": 2.803360380907 
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Prod",
+"Regras": 2.602689685444 
+},
+{
+ "Dataset": "satimage",
+"Experimento": "Prod",
+"Regras": 3.756538102588 
+},
+{
+ "Dataset": "segment",
+"Experimento": "Prod",
+"Regras": 3.025291075796 
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Prod",
+"Regras": 2.602689685444 
+},
+{
+ "Dataset": "spectfheart",
+"Experimento": "Prod",
+"Regras": 2.341805806147 
+},
+{
+ "Dataset": "tae",
+"Experimento": "Prod",
+"Regras": 3.054001181678 
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "Prod",
+"Regras": 2.917770732084 
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Prod",
+"Regras": 2.624668592163 
+},
+{
+ "Dataset": "twonorm",
+"Experimento": "Prod",
+"Regras": 2.833213344056 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Prod",
+"Regras":  2.07944154168 
+},
+{
+ "Dataset": "wine",
+"Experimento": "Prod",
+"Regras": 2.261763098474 
+},
+{
+ "Dataset": "winequality",
+"Experimento": "Prod",
+"Regras":              0 
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Prod",
+"Regras": 2.624668592163 
+},
+{
+ "Dataset": "optdigits",
+"Experimento": "Prod",
+"Regras":              0 
+},
+{
+ "Dataset": "australian",
+"Experimento": "Prod e Negacao",
+"Regras": 3.068052935134 
+},
+{
+ "Dataset": "balance",
+"Experimento": "Prod e Negacao",
+"Regras": 4.642465970732 
+},
+{
+ "Dataset": "banana",
+"Experimento": "Prod e Negacao",
+"Regras":   2.4336133554 
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Prod e Negacao",
+"Regras": 2.839078463509 
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "Prod e Negacao",
+"Regras": 3.912023005428 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Prod e Negacao",
+"Regras": 3.349904087275 
+},
+{
+ "Dataset": "crx",
+"Experimento": "Prod e Negacao",
+"Regras":  3.11351530921 
+},
+{
+ "Dataset": "dermatology",
+"Experimento": "Prod e Negacao",
+"Regras": 5.471850417309 
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "Prod e Negacao",
+"Regras": 4.390738575276 
+},
+{
+ "Dataset": "german",
+"Experimento": "Prod e Negacao",
+"Regras": 3.629660094454 
+},
+{
+ "Dataset": "haberman",
+"Experimento": "Prod e Negacao",
+"Regras": 3.039749158971 
+},
+{
+ "Dataset": "hayes",
+"Experimento": "Prod e Negacao",
+"Regras": 3.526360524616 
+},
+{
+ "Dataset": "heart",
+"Experimento": "Prod e Negacao",
+"Regras":  3.13113691056 
+},
+{
+ "Dataset": "ionosphere",
+"Experimento": "Prod e Negacao",
+"Regras":  2.87356463958 
+},
+{
+ "Dataset": "iris",
+"Experimento": "Prod e Negacao",
+"Regras": 1.945910149055 
+},
+{
+ "Dataset": "magic",
+"Experimento": "Prod e Negacao",
+"Regras": 2.533696813957 
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "Prod e Negacao",
+"Regras": 2.525728644308 
+},
+{
+ "Dataset": "page",
+"Experimento": "Prod e Negacao",
+"Regras": 3.325036020697 
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Prod e Negacao",
+"Regras": 2.785011242238 
+},
+{
+ "Dataset": "pima",
+"Experimento": "Prod e Negacao",
+"Regras": 2.701361212951 
+},
+{
+ "Dataset": "ring",
+"Experimento": "Prod e Negacao",
+"Regras":  3.01553490085 
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Prod e Negacao",
+"Regras":  3.01553490085 
+},
+{
+ "Dataset": "satimage",
+"Experimento": "Prod e Negacao",
+"Regras": 3.754198920235 
+},
+{
+ "Dataset": "segment",
+"Experimento": "Prod e Negacao",
+"Regras": 3.411147712515 
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Prod e Negacao",
+"Regras": 2.740840023925 
+},
+{
+ "Dataset": "spectfheart",
+"Experimento": "Prod e Negacao",
+"Regras": 2.653241964607 
+},
+{
+ "Dataset": "tae",
+"Experimento": "Prod e Negacao",
+"Regras":  3.67882911826 
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "Prod e Negacao",
+"Regras": 3.034952986707 
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Prod e Negacao",
+"Regras": 3.277144732992 
+},
+{
+ "Dataset": "twonorm",
+"Experimento": "Prod e Negacao",
+"Regras": 3.421000008958 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Prod e Negacao",
+"Regras":  2.07944154168 
+},
+{
+ "Dataset": "wine",
+"Experimento": "Prod e Negacao",
+"Regras": 2.906901059847 
+},
+{
+ "Dataset": "winequality",
+"Experimento": "Prod e Negacao",
+"Regras": 3.875359021057 
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Prod e Negacao",
+"Regras": 3.109060958861 
+},
+{
+ "Dataset": "optdigits",
+"Experimento": "Prod e Negacao",
+"Regras": 4.748404354074 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .reduceXTicks(false)
+          
+        chart.xAxis
+  .axisLabel("Datasets")
+  .rotateLabels(   -45)
+
+        
+        
+        chart.yAxis
+  .axisLabel("Ln(regras)")
+  .width(    40)
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+convert -density 1200x1200 Avaliation.pdf -quality 100 -resize 400x800 7.png
+convert -density 1200x1200 Decision.pdf -quality 100 -resize 400x800 6.png
+convert -density 1200x1200 Aggregation.pdf -quality 100 -resize 400x800 5.png
+convert -density 1200x1200 Association.pdf -quality 100 -resize 400x800 4.png
+convert -density 1200x1200 Formulation.pdf -quality 100 -resize 400x800 3.png
+convert -density 1200x1200 Fuzzification.pdf -quality 100 -resize 400x800 2.png
+cp 7.png ~/Dropbox/PRESENTACION2/Presentation/assets/ext_files/etapas
+cp 6.png ~/Dropbox/PRESENTACION2/Presentation/assets/ext_files/etapas
+cp 5.png ~/Dropbox/PRESENTACION2/Presentation/assets/ext_files/etapas
+cp 4.png ~/Dropbox/PRESENTACION2/Presentation/assets/ext_files/etapas
+cp 3.png ~/Dropbox/PRESENTACION2/Presentation/assets/ext_files/etapas
+cp 2.png ~/Dropbox/PRESENTACION2/Presentation/assets/ext_files/etapas
+ 

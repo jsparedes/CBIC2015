@@ -1,0 +1,28 @@
+\documentclass[tikz]{standalone}
+\usepackage[latin9]{inputenc}
+\usetikzlibrary{automata,positioning}
+
+\begin{document}
+	\begin{tikzpicture}
+	\filldraw[fill=red!40!orange, draw=black] (0,0) rectangle (5,5) node[pos=.5, text=white, font=\bfseries] {\huge Agregação};
+	\filldraw[fill=black!90!white, draw=black] (0,5) rectangle (5,10) node[pos=.5, text width=3cm, text=white]{\Large União das ativações de cada regra};
+	\end{tikzpicture}
+\end{document}
+
+
+%\documentclass[tikz]{standalone}
+%\usepackage[latin9]{inputenc}
+%\usetikzlibrary{automata,positioning}
+%
+%\usetikzlibrary{shapes,arrows}
+%
+%\begin{document}
+%\tikzset{block1/.style={rectangle, draw, fill=black, text width=8em, text centered, %minimum height=8em, minimum width=8em}}
+%\tikzset{block2/.style={rectangle, draw, fill=red!40!orange, text width=5em, text %centered, minimum height=8em, minimum width=8em}}
+%\tikzset{whttxt/.style={text=white, font=\bfseries}}
+%
+%\begin{tikzpicture}[node distance=1in]
+%\node [block1, whttxt] (nodedescription) {\scriptsize Aunamiento de premisas para %una clase, generación de la base de reglas para la clase};
+%\node [block2, below of=nodedescription, whttxt] (nodestage) {Agregação};
+%\end{tikzpicture}
+%\end{document}

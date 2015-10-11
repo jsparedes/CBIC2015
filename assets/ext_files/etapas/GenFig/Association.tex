@@ -1,0 +1,12 @@
+\documentclass[tikz]{standalone}
+\usepackage[latin9]{inputenc}
+\usetikzlibrary{automata,positioning}
+
+\definecolor{mycolor}{RGB}{224,219,80}
+
+\begin{document}
+\begin{tikzpicture}
+\filldraw[fill=mycolor, draw=black] (0,0) rectangle (5,5) node[pos=.5, text=red, font=\bfseries] {\huge Associação};
+\filldraw[fill=black!90!white, draw=black] (0,5) rectangle (5,10) node[pos=.5, text width=4cm, text=white]{\Large Definição do consequente mais apropriado para as premissas};
+\end{tikzpicture}
+\end{document}

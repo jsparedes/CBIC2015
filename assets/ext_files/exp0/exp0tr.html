@@ -1,0 +1,600 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='../libs/nv.d3.min.css'>
+    
+    <script src='../libs/jquery.min.js' type='text/javascript'></script>
+    <script src='../libs/d3.v3.min.js' type='text/javascript'></script>
+    <script src='../libs/nv.d3.min.js' type='text/javascript'></script>
+    <script src='../libs/fisheye.min.js' type='text/javascript'></script>
+	
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart101c433171d0' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart101c433171d0()
+    });
+    function drawchart101c433171d0(){  
+      var opts = {
+ "dom": "chart101c433171d0",
+"width":    800,
+"height":    400,
+"x": "Dataset",
+"y": "Regras",
+"group": "Experimento",
+"type": "multiBarChart",
+"id": "chart101c433171d0" 
+},
+        data = [
+ {
+ "Dataset": "australian",
+"Experimento": "Min",
+"Regras": 6.327936783729 
+},
+{
+ "Dataset": "banana",
+"Experimento": "Min",
+"Regras": 2.995732273554 
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Min",
+"Regras": 4.882801922586 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Min",
+"Regras": 5.590986980511 
+},
+{
+ "Dataset": "crx",
+"Experimento": "Min",
+"Regras": 6.369900982828 
+},
+{
+ "Dataset": "german",
+"Experimento": "Min",
+"Regras": 7.170888478513 
+},
+{
+ "Dataset": "heart",
+"Experimento": "Min",
+"Regras": 6.364750756852 
+},
+{
+ "Dataset": "ionosphere",
+"Experimento": "Min",
+"Regras": 8.043342170442 
+},
+{
+ "Dataset": "iris",
+"Experimento": "Min",
+"Regras": 4.406719247264 
+},
+{
+ "Dataset": "magic",
+"Experimento": "Min",
+"Regras": 6.013715156043 
+},
+{
+ "Dataset": "optdigits",
+"Experimento": "Min",
+"Regras": 8.752739509447 
+},
+{
+ "Dataset": "penbased",
+"Experimento": "Min",
+"Regras": 6.587550014825 
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Min",
+"Regras": 4.820281565605 
+},
+{
+ "Dataset": "pima",
+"Experimento": "Min",
+"Regras": 5.627621113691 
+},
+{
+ "Dataset": "ring",
+"Experimento": "Min",
+"Regras":  7.23417717975 
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Min",
+"Regras": 5.902633333401 
+},
+{
+ "Dataset": "segment",
+"Experimento": "Min",
+"Regras":  6.81454289726 
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Min",
+"Regras": 6.854354502255 
+},
+{
+ "Dataset": "tae",
+"Experimento": "Min",
+"Regras": 4.521788577049 
+},
+{
+ "Dataset": "texture",
+"Experimento": "Min",
+"Regras":  8.64241515617 
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Min",
+"Regras": 3.135494215929 
+},
+{
+ "Dataset": "twonorm",
+"Experimento": "Min",
+"Regras": 7.617267813628 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Min",
+"Regras": 7.435438019815 
+},
+{
+ "Dataset": "wine",
+"Experimento": "Min",
+"Regras": 6.675823221635 
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Min",
+"Regras": 5.187385805841 
+},
+{
+ "Dataset": "australian",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "banana",
+"Experimento": "Min e Negacao",
+"Regras": 4.762173934798 
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Min e Negacao",
+"Regras": 6.576469569048 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Min e Negacao",
+"Regras":  7.51370924784 
+},
+{
+ "Dataset": "crx",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "german",
+"Experimento": "Min e Negacao",
+"Regras":  9.38982457395 
+},
+{
+ "Dataset": "heart",
+"Experimento": "Min e Negacao",
+"Regras": 8.064636475774 
+},
+{
+ "Dataset": "ionosphere",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "iris",
+"Experimento": "Min e Negacao",
+"Regras": 6.396929655216 
+},
+{
+ "Dataset": "magic",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "optdigits",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "penbased",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "pima",
+"Experimento": "Min e Negacao",
+"Regras":  7.45818615734 
+},
+{
+ "Dataset": "ring",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Min e Negacao",
+"Regras":  7.70436116791 
+},
+{
+ "Dataset": "segment",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "tae",
+"Experimento": "Min e Negacao",
+"Regras": 6.276643489342 
+},
+{
+ "Dataset": "texture",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "twonorm",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Min e Negacao",
+"Regras": 9.105868350379 
+},
+{
+ "Dataset": "wine",
+"Experimento": "Min e Negacao",
+"Regras": 8.761863373275 
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Min e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "australian",
+"Experimento": "Prod",
+"Regras": 6.291569139558 
+},
+{
+ "Dataset": "banana",
+"Experimento": "Prod",
+"Regras": 2.484906649788 
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Prod",
+"Regras": 4.753590191106 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Prod",
+"Regras": 5.463831805026 
+},
+{
+ "Dataset": "crx",
+"Experimento": "Prod",
+"Regras": 6.342121418721 
+},
+{
+ "Dataset": "german",
+"Experimento": "Prod",
+"Regras": 7.062191632287 
+},
+{
+ "Dataset": "heart",
+"Experimento": "Prod",
+"Regras": 6.318968113746 
+},
+{
+ "Dataset": "ionosphere",
+"Experimento": "Prod",
+"Regras": 7.907283609426 
+},
+{
+ "Dataset": "iris",
+"Experimento": "Prod",
+"Regras": 4.094344562222 
+},
+{
+ "Dataset": "magic",
+"Experimento": "Prod",
+"Regras": 5.814130531825 
+},
+{
+ "Dataset": "optdigits",
+"Experimento": "Prod",
+"Regras": 8.664923303441 
+},
+{
+ "Dataset": "penbased",
+"Experimento": "Prod",
+"Regras":  6.29526600144 
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Prod",
+"Regras":  4.54329478227 
+},
+{
+ "Dataset": "pima",
+"Experimento": "Prod",
+"Regras": 5.411646051855 
+},
+{
+ "Dataset": "ring",
+"Experimento": "Prod",
+"Regras": 7.063048163388 
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Prod",
+"Regras": 5.662960480136 
+},
+{
+ "Dataset": "segment",
+"Experimento": "Prod",
+"Regras": 6.543911845565 
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Prod",
+"Regras":              0 
+},
+{
+ "Dataset": "tae",
+"Experimento": "Prod",
+"Regras":  4.35670882669 
+},
+{
+ "Dataset": "texture",
+"Experimento": "Prod",
+"Regras": 8.461469042644 
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Prod",
+"Regras": 3.135494215929 
+},
+{
+ "Dataset": "twonorm",
+"Experimento": "Prod",
+"Regras": 7.353081920515 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Prod",
+"Regras": 7.082548569355 
+},
+{
+ "Dataset": "wine",
+"Experimento": "Prod",
+"Regras": 6.347389209656 
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Prod",
+"Regras": 5.141663556503 
+},
+{
+ "Dataset": "australian",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "banana",
+"Experimento": "Prod e Negacao",
+"Regras": 4.828313737302 
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Prod e Negacao",
+"Regras": 6.694562058521 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Prod e Negacao",
+"Regras": 7.570958583169 
+},
+{
+ "Dataset": "crx",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "german",
+"Experimento": "Prod e Negacao",
+"Regras":  9.42561302891 
+},
+{
+ "Dataset": "heart",
+"Experimento": "Prod e Negacao",
+"Regras": 8.123854263106 
+},
+{
+ "Dataset": "ionosphere",
+"Experimento": "Prod e Negacao",
+"Regras":  10.7302692454 
+},
+{
+ "Dataset": "iris",
+"Experimento": "Prod e Negacao",
+"Regras": 6.489204931325 
+},
+{
+ "Dataset": "magic",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "optdigits",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "penbased",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "pima",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "ring",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "segment",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "tae",
+"Experimento": "Prod e Negacao",
+"Regras": 6.329720905523 
+},
+{
+ "Dataset": "texture",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "twonorm",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+},
+{
+ "Dataset": "wine",
+"Experimento": "Prod e Negacao",
+"Regras": 8.821437352167 
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Prod e Negacao",
+"Regras":              0 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .reduceXTicks(false)
+  .color([ "brown", "blue", "#594c26", "green" ])
+          
+        chart.xAxis
+  .axisLabel("Datasets")
+  .rotateLabels(   -45)
+
+        
+        
+        chart.yAxis
+  .axisLabel("Ln(TRL)")
+  .width(    40)
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>
