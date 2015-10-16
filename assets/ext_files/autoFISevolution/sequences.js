@@ -1,6 +1,6 @@
 // Dimensions of sunburst.
-var width = 750;
-var height = 600;
+var width = 625;
+var height = 475;
 var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
@@ -225,7 +225,7 @@ function drawLegend() {
 
   // Dimensions of legend item: width, height, spacing, radius of rounded rect.
   var li = {
-    w: 75, h: 30, s: 3, r: 3
+    w: 95, h: 30, s: 3, r: 3
   };
 
   var legend = d3.select("#legend").append("svg:svg")
